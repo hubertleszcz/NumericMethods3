@@ -1,4 +1,4 @@
-function [A,b,M,bm,x,err_norm,time,iterations,index_number, residuums] = solve_Jacobi(N, A, b)
+function [A,b,M,bm,x,err_norm,time,iterations,index_number, residuum] = solve_Jacobi(N, A, b)
 % A - macierz z równania macierzowego A * x = b
 % b - wektor prawej strony równania macierzowego A * x = b
 % M - macierz pomocnicza opisana w instrukcji do Laboratorium 3 – sprawdź wzór (5) w instrukcji, który definiuje M jako M_J.
@@ -36,5 +36,5 @@ for i = 1:1000
    end
 end
 time = toc;
-err_norm = norm(A*x - b);
+err_norm = norm(A*x-b);
 end

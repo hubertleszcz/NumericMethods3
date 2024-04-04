@@ -1,4 +1,4 @@
-function [A,b,M,bm,x,err_norm,time,iterations,index_number, residuums] = solve_Gauss_Seidel(N, A ,b)
+function [A,b,M,bm,x,err_norm,time,iterations,index_number, residuum] = solve_Gauss_Seidel(N, A ,b)
 % A - macierz rzadka z równania macierzowego A * x = b
 % b - wektor prawej strony równania macierzowego A * x = b
 % M - macierz pomocnicza opisana w instrukcji do Laboratorium 3 – sprawdź wzór (7) w instrukcji, który definiuje M jako M_{GS}

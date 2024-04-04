@@ -13,7 +13,7 @@ plot(N, time_Jacobi, '-o', N, time_Gauss_Seidel, '-s', 'LineWidth', 2);
 xlabel("rozmiar macierzy");
 ylabel("czas [s]");
 title("czas obliczeń vs rozmiar macierzy");
-legend("Metoda Jacobiego", "Metoda Gaussa-Seidela", 'Location', 'eastoutside');
+legend("Metoda Gaussa", "Metoda Jacobi", 'Location', 'eastoutside');
 grid on;
 
 
@@ -23,7 +23,7 @@ bar(N, bar_data);
 xlabel("rozmiar macierzy");
 ylabel("liczba iteracji");
 title("liczba iteracji vs rozmiar macierzy");
-legend("Metoda Jacobiego", "Metoda Gaussa-Seidela", 'Location', 'eastoutside');
+legend("Metoda Gaussa", "Metoda Jacobi", 'Location', 'eastoutside');
 grid on;
 print -dpng zadanie5.png 
 end
