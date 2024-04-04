@@ -1,4 +1,4 @@
-function [A,b,M,bm,x,err_norm,time,iterations,index_number] = solve_Gauss_Seidel(N)
+function [A,b,M,bm,x,err_norm,time,iterations,index_number, residuums] = solve_Gauss_Seidel(N, A ,b)
 % A - macierz rzadka z równania macierzowego A * x = b
 % b - wektor prawej strony równania macierzowego A * x = b
 % M - macierz pomocnicza opisana w instrukcji do Laboratorium 3 – sprawdź wzór (7) w instrukcji, który definiuje M jako M_{GS}
@@ -10,7 +10,12 @@ function [A,b,M,bm,x,err_norm,time,iterations,index_number] = solve_Gauss_Seidel
 % index_number - Twój numer indeksu
 index_number = 193552;
 L1 = 2;
-[A,b] = generate_matrix(N, L1);
+
+if isempty(A) && isempty(b)
+    [A,b] = generate_matrix(N,L1);
+end
+
+
 
 
 L = tril(A, -1);
