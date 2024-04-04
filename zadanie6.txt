@@ -1,6 +1,6 @@
 Norma błędu przy metodzie bezpośredniej wynosi 6.8874e-13.
 Norma błędu przy metodzie Jacobi po 1000 iteracjach jest nieokreślona, ponieważ stale rośnie i zbiega do nieskończoności.
-Norma błędu przy metodzie Gaussa-Seidela po 1000 iteracjach wynosi 6.3746e+10.
-Metody iteracyjne są w takim razie podobne.
+Norma błędu przy metodzie Gaussa-Seidela po 1000 iteracjach wynosi 6.4367e+10.
+Metody iteracyjne są w takim razie podobne, ponieważ nie gwarantują dokładnych rozwiązań.
 Z norm błędów residualnych wynika, że to metoda bezpośrednia okazała się tą najskuteczniejszą.
-Rozwiązania dla metod iteracyjnych są więc niedokładne.
+Metody iteracyjne, w przeciwieństwie do metody bezpośredniej nie dał dokąłdnego rozwiązania.

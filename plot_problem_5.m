@@ -13,7 +13,7 @@ plot(N, time_Jacobi, N, time_Gauss_Seidel);
 xlabel("rozmiar macierzy");
 ylabel("czas [s]");
 title("czas obliczeń vs rozmiar macierzy");
-legend("Metoda Jacobi","Metoda Jacobi", 'Location', 'eastoutside');
+legend("Metoda Jacobi","Metoda Gaussa", 'Location', 'eastoutside');
 grid on;
 
 
