@@ -9,7 +9,7 @@ function plot_problem_5(N,time_Jacobi,time_Gauss_Seidel,iterations_Jacobi,iterat
 figure;
 
 subplot(2, 1, 1);
-plot(N, time_Jacobi, '-o', N, time_Gauss_Seidel, '-s', 'LineWidth', 2);
+plot(N, time_Jacobi, N, time_Gauss_Seidel);
 xlabel("rozmiar macierzy");
 ylabel("czas [s]");
 title("czas obliczeń vs rozmiar macierzy");
