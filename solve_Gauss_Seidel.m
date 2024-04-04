@@ -23,7 +23,7 @@ U = triu(A, 1);
 D = diag(diag(A));
 
 M = -(D+L)\U;
-bm = -(D+L)\b;
+bm = (D+L)\b;
 x = ones(N,1);
 iterations = 0;
 residuums = [];
